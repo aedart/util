@@ -30,7 +30,7 @@ interface Populatable {
      *
      * @return void
      *
-     * @throws \InvalidArgumentException In case that one or more of the given array entries are invalid
+     * @throws \Exception In case that one or more of the given array entries are invalid
      */
     public function populate(array $data);
 
