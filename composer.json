@@ -1,6 +1,6 @@
 {
     "name": "aedart/util",
-    "description": "Various utility resources",
+    "description": "This package contains a set of various utility resources, which can be used independently.",
     "keywords": [
         "util",
         "array"

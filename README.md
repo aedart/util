@@ -1,6 +1,6 @@
 ## Util ##
 
-This package contains a set a small utility resources, which can be used independently. 
+This package contains a set of various utility resources, which can be used independently. 
 
 Official website (https://bitbucket.org/aedart/util)
 
