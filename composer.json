@@ -1,0 +1,32 @@
+{
+    "name": "aedart/util",
+    "description": "Various utility resources",
+    "keywords": [
+        "util",
+        "array"
+    ],
+    "homepage": "https://bitbucket.org/aedart/util",
+    "license": "BSD-3-Clause",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alin Eugen Deac",
+            "email": "aedart@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "2.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aedart\\Util\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "suggest": {
+        "aedart/model": "Collection of getter- / setter-interfaces and traits for various common properties"
+    }
+}
