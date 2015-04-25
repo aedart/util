@@ -33,6 +33,6 @@
         "aedart/model": "Collection of getter- / setter-interfaces and traits for various common properties"
     },
     "scripts": {
-        "post-update-cmd": "php vendor/bin/license-manager license:copy vendor/aedart/license/aedart/model/BSD-3-Clause"
+        "post-update-cmd": "vendor/bin/license-manager license:copy vendor/aedart/license/aedart/model/BSD-3-Clause"
     }
 }
