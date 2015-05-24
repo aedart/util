@@ -1,4 +1,4 @@
-<?php namespace Aedart\Util\Traits;
+<?php namespace Aedart\Util\Traits\Collections;
 
 use Illuminate\Support\Collection;
 

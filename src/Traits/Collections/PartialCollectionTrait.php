@@ -1,8 +1,6 @@
-<?php  namespace Aedart\Util\Traits;
+<?php  namespace Aedart\Util\Traits\Collections;
 
-use Aedart\Util\Interfaces\IPartialCollection;
-use Aedart\Util\Traits\InternalCollectionTrait;
-use Illuminate\Support\Collection;
+use Aedart\Util\Traits\Collections\InternalCollectionTrait;
 use Traversable;
 
 /**

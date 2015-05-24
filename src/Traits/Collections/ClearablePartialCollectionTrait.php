@@ -1,6 +1,6 @@
-<?php  namespace Aedart\Util\Traits; 
+<?php namespace Aedart\Util\Traits\Collections;
 
-use Aedart\Util\Traits\PartialCollectionTrait;
+use Aedart\Util\Traits\Collections\PartialCollectionTrait;
 
 /**
  * Trait Clearable Partial Collection
