@@ -4,6 +4,10 @@ This package contains a set of various utility resources, which can be used inde
 
 Official website (https://bitbucket.org/aedart/util)
 
+## Contents ##
+
+{{toc}}
+
 ## How to install ##
 
 ```
@@ -65,7 +69,7 @@ class MyCollection implements IPartialCollection{
 ### Behind the scenes ###
 
 The `PartialCollectionTrait` uses a [`Illuminate\Support\Collection`](http://laravel.com/docs/5.0/collections) and provides internal access to it via the `getInternalCollection()` and
-`setInternalCollection(Collection $internalCollection)` methods.
+`setInternalCollection()` methods.
 
 In other words, you can choose to form your concrete collections as you see fit, and expose only those methods that you wish.
 
