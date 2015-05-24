@@ -6,7 +6,7 @@ Official website (https://bitbucket.org/aedart/util)
 
 ## Contents ##
 
-[toc]
+[TOC]
 
 ## How to install ##
 
