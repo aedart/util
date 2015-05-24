@@ -13,7 +13,7 @@ use Traversable;
  * However, not all methods are offered by this trait. The reason for this is to
  * allow you to decide how your concrete collection should behave.
  *
- * @see \Aedart\Util\Interfaces\IPartialCollection
+ * @see \Aedart\Util\Interfaces\Collections\IPartialCollection
  * @see \Illuminate\Support\Collection
  *
  * @author Alin Eugen Deac <aedart@gmail.com>

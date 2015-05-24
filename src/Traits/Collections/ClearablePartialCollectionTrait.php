@@ -5,7 +5,7 @@ use Aedart\Util\Traits\Collections\PartialCollectionTrait;
 /**
  * Trait Clearable Partial Collection
  *
- * @see \Aedart\Util\Interfaces\IPartialCollection
+ * @see \Aedart\Util\Interfaces\Collections\IPartialCollection
  * @see \Aedart\Util\Interfaces\Clearable
  * @see \Illuminate\Support\Collection
  *
