@@ -10,21 +10,8 @@ use Illuminate\Support\Collection;
  *
  * @author Alin Eugen Deac <aedart@gmail.com>
  */
-class InternalCollectionTest extends \Codeception\TestCase\Test
+class InternalCollectionTest extends CollectionTestCase
 {
-    /**
-     * @var \UnitTester
-     */
-    protected $tester;
-
-    protected function _before()
-    {
-    }
-
-    protected function _after()
-    {
-    }
-
     /*********************************************************************************
      * Helpers
      ********************************************************************************/
