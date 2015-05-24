@@ -29,6 +29,11 @@
             "Aedart\\Util\\": "src/"
         }
     },
+    "autoload-dev": {
+        "classmap": [
+            "tests/unit/collection"
+        ]
+    },
     "minimum-stability": "stable",
     "suggest": {
         "aedart/model": "Collection of getter- / setter-interfaces and traits for various common properties"
