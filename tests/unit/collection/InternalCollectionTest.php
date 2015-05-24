@@ -1,12 +1,12 @@
 <?php
 
-use Aedart\Util\Traits\InternalCollectionTrait;
+use Aedart\Util\Traits\Collections\InternalCollectionTrait;
 use Illuminate\Support\Collection;
 
 /**
  * Class InternalCollectionTest
  *
- * @coversDefaultClass Aedart\Util\Traits\InternalCollectionTrait
+ * @coversDefaultClass Aedart\Util\Traits\Collections\InternalCollectionTrait
  *
  * @author Alin Eugen Deac <aedart@gmail.com>
  */

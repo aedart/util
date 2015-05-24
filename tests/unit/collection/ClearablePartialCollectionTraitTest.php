@@ -1,11 +1,11 @@
 <?php
 
-use Aedart\Util\Traits\ClearablePartialCollectionTrait;
+use Aedart\Util\Traits\Collections\ClearablePartialCollectionTrait;
 
 /**
  * Class Clearable-Partial-Collection Trait Test
  *
- * @coversDefaultClass Aedart\Util\Traits\ClearablePartialCollectionTrait
+ * @coversDefaultClass Aedart\Util\Traits\Collections\ClearablePartialCollectionTrait
  *
  * @author Alin Eugen Deac <aedart@gmail.com>
  */

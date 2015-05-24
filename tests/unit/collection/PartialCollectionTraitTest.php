@@ -1,11 +1,11 @@
 <?php
 
-use Aedart\Util\Traits\PartialCollectionTrait;
+use Aedart\Util\Traits\Collections\PartialCollectionTrait;
 
 /**
  * Class PartialCollectionTraitTest
  *
- * @coversDefaultClass Aedart\Util\Traits\PartialCollectionTrait
+ * @coversDefaultClass Aedart\Util\Traits\Collections\PartialCollectionTrait
  *
  * @author Alin Eugen Deac <aedart@gmail.com>
  */
