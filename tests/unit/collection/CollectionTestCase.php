@@ -10,29 +10,8 @@ use Faker\Factory as FakerFactory;
  * @author Alin Eugen Deac <aedart@gmail.com>
  * @package unit\collection
  */
-abstract class CollectionTestCase extends \Codeception\TestCase\Test
+abstract class CollectionTestCase extends UnitTestCase
 {
-    /**
-     * @var \UnitTester
-     */
-    protected $tester;
-
-    /**
-     * Instance of faker
-     *
-     * @var \Faker\Generator
-     */
-    protected $faker = null;
-
-    protected function _before()
-    {
-        $this->faker = FakerFactory::create();
-    }
-
-    protected function _after()
-    {
-    }
-
     /*********************************************************************************
      * Helpers
      ********************************************************************************/
