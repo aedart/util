@@ -15,14 +15,14 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "5.0.*"
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.*"
     },
     "require-dev": {
         "aedart/license": "1.*",
         "aedart/license-file-manager": "1.*",
         "codeception/codeception": "2.0.*",
-        "fzaninotto/faker": "1.5.*@dev"
+        "fzaninotto/faker": "1.5.*"
     },
     "autoload": {
         "psr-4": {
