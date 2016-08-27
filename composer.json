@@ -16,11 +16,11 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "illuminate/support": "~5.1"
+        "illuminate/support": "5.2.*"
     },
     "require-dev": {
         "aedart/license": "1.*",
-        "aedart/license-file-manager": "~1.4",
+        "aedart/license-file-manager": "~1.7",
         "codeception/codeception": "~2.1",
         "fzaninotto/faker": "~1.5"
     },
