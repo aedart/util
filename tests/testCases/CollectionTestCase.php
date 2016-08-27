@@ -1,7 +1,5 @@
 <?php
 
-use Faker\Factory as FakerFactory;
-
 /**
  * Class Collection Test Case
  *
