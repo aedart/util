@@ -1,34 +1,14 @@
 <?php
 
-use Faker\Factory as FakerFactory;
+use Aedart\Testing\TestCases\Unit\UnitTestCase as BaseUnitTestCase;
 
 /**
  * Class UnitTestCase
  *
  * @author Alin Eugen Deac <aedart@gmail.com>
  */
-abstract class UnitTestCase extends \Codeception\TestCase\Test
+abstract class UnitTestCase extends BaseUnitTestCase
 {
-    /**
-     * @var \UnitTester
-     */
-    protected $tester;
-
-    /**
-     * Instance of faker
-     *
-     * @var \Faker\Generator
-     */
-    protected $faker = null;
-
-    protected function _before()
-    {
-        $this->faker = FakerFactory::create();
-    }
-
-    protected function _after()
-    {
-    }
 
     /*********************************************************************************
      * Helpers
