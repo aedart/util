@@ -1,4 +1,5 @@
-<?php  namespace Aedart\Util\Interfaces; 
+<?php
+namespace Aedart\Util\Interfaces;
 
 /**
  * Interface Populatable
@@ -17,7 +18,8 @@
  * @author Alin Eugen Deac <aedart@gmail.com>
  * @package Aedart\Util\Interfaces
  */
-interface Populatable {
+interface Populatable
+{
 
     /**
      * Populate this component via an array

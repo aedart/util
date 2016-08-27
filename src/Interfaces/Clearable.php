@@ -1,4 +1,5 @@
-<?php  namespace Aedart\Util\Interfaces; 
+<?php
+namespace Aedart\Util\Interfaces;
 
 /**
  * Interface Clearable
@@ -6,7 +7,8 @@
  * @author Alin Eugen Deac <aedart@gmail.com>
  * @package Aedart\Util\Interfaces
  */
-interface Clearable {
+interface Clearable
+{
 
     /**
      * Clear this component, e.g. collection, list, set...etc.

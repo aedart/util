@@ -11,9 +11,13 @@ use JsonSerializable;
 /**
  * Interface Partial Collection
  *
+ * <br />
+ *
  * A partial collection is a "incomplete" collection. It defines but a few methods,
  * which allows any concrete implementation to specify how insert, search and obtain
  * operations are to be performed.
+ *
+ * <br />
  *
  * In other words, a partial collection forms the basis for a real / full collection
  * implementation. In such an implementation, you would ideally define what is allowed
@@ -22,7 +26,14 @@ use JsonSerializable;
  * @author Alin Eugen Deac <aedart@gmail.com>
  * @package Aedart\Util\Interfaces
  */
-interface IPartialCollection extends Populatable, Arrayable, ArrayAccess, IteratorAggregate, Countable, JsonSerializable, Jsonable{
+interface IPartialCollection extends Populatable,
+    Arrayable,
+    ArrayAccess,
+    IteratorAggregate,
+    Countable,
+    JsonSerializable,
+    Jsonable
+{
 
     /**
      * Check if this collection is empty or not
