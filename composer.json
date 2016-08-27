@@ -30,8 +30,7 @@
     },
     "autoload-dev": {
         "classmap": [
-            "tests/unit/UnitTestCase.php",
-            "tests/unit/collection"
+            "tests/testCases"
         ]
     },
     "minimum-stability": "stable",
