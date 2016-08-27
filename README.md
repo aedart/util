@@ -17,8 +17,7 @@ This package contains a set of various utility resources, which can be used inde
 ## How to install
 
 ```console
-
-composer require aedart/util 1.*
+composer require aedart/util
 ```
 
 This package uses [composer](https://getcomposer.org/). If you do not know what that is or how it works, I recommend that you read a little about, before attempting to use this package.
@@ -36,11 +35,12 @@ In this example, we create a concrete collection which can only contain integer 
 use Aedart\Util\Interfaces\Collections\IPartialCollection;
 use Aedart\Util\Traits\Collections\PartialCollectionTrait;
 
-class MyCollection implements IPartialCollection{
-    
+class MyCollection implements IPartialCollection
+{
     use PartialCollectionTrait;
 
-    public function put($key, $value){
+    public function put($key, $value)
+    {
         if(!is_int($value)){
             throw new \Exception(sprintf('Value must be of the type integer, %s given', var_export($value, true)));
         }
@@ -48,23 +48,28 @@ class MyCollection implements IPartialCollection{
         $this->getInternalCollection()->put($key, $value);
     }
     
-    public function populate(array $data){
+    public function populate(array $data = [])
+    {
         // ... Implementation not shown here ...
     }
     
-    public function offsetExists($offset) {
+    public function offsetExists($offset)
+    {
         // ... Implementation not shown here ...
     }
     
-    public function offsetGet($offset) {
+    public function offsetGet($offset)
+    {
         // ... Implementation not shown here ...
     }
     
-    public function offsetSet($offset, $value) {
+    public function offsetSet($offset, $value)
+    {
         // ... Implementation not shown here ...
     }
     
-    public function offsetUnset($offset) {
+    public function offsetUnset($offset)
+    {
         // ... Implementation not shown here ...
     }
 }
