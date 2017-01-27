@@ -39,7 +39,7 @@ class PartialCollectionTraitTest extends CollectionTestCase
         $list = $this->getListOfKeyValuePairs();
 
         $collection->addFrom($list);
-        $collection->put($this->faker->word, $this->faker->sentence());
+        $collection->put($this->faker->unique()->word, $this->faker->sentence());
 
         $this->assertSame(count($list) + 1, $collection->count());
     }
