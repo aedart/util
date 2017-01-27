@@ -12,7 +12,8 @@ use Aedart\Util\Traits\Collections\PartialCollectionTrait;
  * @author Alin Eugen Deac <aedart@gmail.com>
  * @package Aedart\Util\Traits
  */
-trait ClearablePartialCollectionTrait {
+trait ClearablePartialCollectionTrait
+{
 
     use PartialCollectionTrait;
 
@@ -24,7 +25,8 @@ trait ClearablePartialCollectionTrait {
      *
      * @return void
      */
-    public function clear(){
+    public function clear()
+    {
         $this->setInternalCollection($this->getDefaultInternalCollection());
     }
 

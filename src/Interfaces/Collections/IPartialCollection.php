@@ -1,4 +1,4 @@
-<?php  namespace Aedart\Util\Interfaces\Collections;
+<?php namespace Aedart\Util\Interfaces\Collections;
 
 use Aedart\Util\Interfaces\Populatable;
 use ArrayAccess;

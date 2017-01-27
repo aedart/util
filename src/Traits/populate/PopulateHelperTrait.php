@@ -1,4 +1,4 @@
-<?php  namespace Aedart\Util\Traits\populate;
+<?php namespace Aedart\Util\Traits\populate;
 
 use Exception;
 
@@ -10,7 +10,8 @@ use Exception;
  * @author Alin Eugen Deac <aedart@gmail.com>
  * @package Aedart\Util\Traits\populate
  */
-trait PopulateHelperTrait {
+trait PopulateHelperTrait
+{
 
     /**
      * Assert that the given data array contains all of the required
@@ -22,16 +23,17 @@ trait PopulateHelperTrait {
      * @throws Exception If there are too few properties provided or if the required properties are not present
      *                  in the given data array
      */
-    public function assertPopulateData(array $data, array $required){
+    public function assertPopulateData(array $data, array $required)
+    {
         // Check if the provided data has less entries, than the
         // required
-        if(count($data) < count($required)){
+        if (count($data) < count($required)) {
             throw new Exception(sprintf('Cannot populate %s, incorrect amount of properties given', get_class($this)));
         }
 
         // Check that all of the required are present
-        foreach($required as $requiredKey){
-            if(!array_key_exists($requiredKey, $data)){
+        foreach ($required as $requiredKey) {
+            if (!array_key_exists($requiredKey, $data)) {
                 throw new Exception(sprintf('Cannot populate %s, missing %s', get_class($this), $requiredKey));
             }
         }

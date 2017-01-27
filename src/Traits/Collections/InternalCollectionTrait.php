@@ -13,7 +13,8 @@ use Illuminate\Support\Collection;
  * @author Alin Eugen Deac <aedart@gmail.com>
  * @package Aedart\Util\Traits
  */
-trait InternalCollectionTrait {
+trait InternalCollectionTrait
+{
 
     /**
      * This collection's internal collection.
@@ -29,7 +30,8 @@ trait InternalCollectionTrait {
      *
      * @param \Illuminate\Support\Collection $internalCollection
      */
-    protected function setInternalCollection(Collection $internalCollection){
+    protected function setInternalCollection(Collection $internalCollection)
+    {
         $this->internalCollection = $internalCollection;
     }
 
@@ -42,8 +44,9 @@ trait InternalCollectionTrait {
      *
      * @return \Illuminate\Support\Collection
      */
-    protected function getInternalCollection(){
-        if(is_null($this->internalCollection)){
+    protected function getInternalCollection()
+    {
+        if (is_null($this->internalCollection)) {
             $this->setInternalCollection($this->getDefaultInternalCollection());
         }
         return $this->internalCollection;
@@ -54,7 +57,8 @@ trait InternalCollectionTrait {
      *
      * @return Collection A default empty collection
      */
-    protected function getDefaultInternalCollection(){
+    protected function getDefaultInternalCollection()
+    {
         return new Collection();
     }
 

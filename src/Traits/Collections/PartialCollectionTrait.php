@@ -1,4 +1,4 @@
-<?php  namespace Aedart\Util\Traits\Collections;
+<?php namespace Aedart\Util\Traits\Collections;
 
 use Aedart\Util\Traits\Collections\InternalCollectionTrait;
 use Traversable;
@@ -19,7 +19,8 @@ use Traversable;
  * @author Alin Eugen Deac <aedart@gmail.com>
  * @package Aedart\Util\Traits
  */
-trait PartialCollectionTrait {
+trait PartialCollectionTrait
+{
 
     use InternalCollectionTrait;
 
@@ -32,7 +33,8 @@ trait PartialCollectionTrait {
      * <p>
      * The return value is cast to an integer.
      */
-    public function count() {
+    public function count()
+    {
         return $this->getInternalCollection()->count();
     }
 
@@ -41,7 +43,8 @@ trait PartialCollectionTrait {
      *
      * @return bool True if empty, false if not
      */
-    public function isEmpty() {
+    public function isEmpty()
+    {
         return $this->getInternalCollection()->isEmpty();
     }
 
@@ -52,7 +55,8 @@ trait PartialCollectionTrait {
      * @return Traversable An instance of an object implementing <b>Iterator</b> or
      * <b>Traversable</b>
      */
-    public function getIterator() {
+    public function getIterator()
+    {
         return $this->getInternalCollection()->getIterator();
     }
 
@@ -61,7 +65,8 @@ trait PartialCollectionTrait {
      *
      * @return array
      */
-    public function toArray() {
+    public function toArray()
+    {
         return $this->getInternalCollection()->toArray();
     }
 
@@ -72,7 +77,8 @@ trait PartialCollectionTrait {
      * @return mixed data which can be serialized by <b>json_encode</b>,
      * which is a value of any type other than a resource.
      */
-    public function jsonSerialize() {
+    public function jsonSerialize()
+    {
         return $this->toArray();
     }
 
@@ -83,7 +89,8 @@ trait PartialCollectionTrait {
      *
      * @return string
      */
-    public function toJson($options = 0) {
+    public function toJson($options = 0)
+    {
         return json_encode($this->jsonSerialize(), $options);
     }
 
@@ -92,7 +99,8 @@ trait PartialCollectionTrait {
      *
      * @return string Representation of this collection
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->toJson();
     }
 }
