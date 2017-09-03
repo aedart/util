@@ -1,14 +1,10 @@
 <?php namespace Aedart\Util\Interfaces\Collections;
 
-use Aedart\Util\Interfaces\Populatable;
-use ArrayAccess;
-use Countable;
-use Illuminate\Contracts\Support\Arrayable;
-use Illuminate\Contracts\Support\Jsonable;
-use IteratorAggregate;
-use JsonSerializable;
+use Aedart\Util\Contracts\Collections\PartialCollection;
 
 /**
+ * @deprecated Since version 4.0, use \Aedart\Util\Contracts\Collections\PartialCollection
+ *
  * Interface Partial Collection
  *
  * <br />
@@ -26,27 +22,14 @@ use JsonSerializable;
  * @author Alin Eugen Deac <aedart@gmail.com>
  * @package Aedart\Util\Interfaces
  */
-interface IPartialCollection extends Populatable,
-    Arrayable,
-    ArrayAccess,
-    IteratorAggregate,
-    Countable,
-    JsonSerializable,
-    Jsonable
+interface IPartialCollection extends PartialCollection
 {
-
     /**
-     * Check if this collection is empty or not
+     * @deprecated Since 4.0, interface will not longer force require __toString implementation
      *
-     * @return bool True if empty, false if not
-     */
-    public function isEmpty();
-
-    /**
      * Get the string representation of this collection
      *
      * @return string Representation of this collection
      */
     public function __toString();
-
 }
