@@ -2,22 +2,14 @@
 namespace Aedart\Util\Interfaces;
 
 /**
+ * @deprecated Since version 4.0, use \Aedart\Util\Contracts\Clearable instead
+ *
  * Interface Clearable
  *
  * @author Alin Eugen Deac <aedart@gmail.com>
  * @package Aedart\Util\Interfaces
  */
-interface Clearable
+interface Clearable extends \Aedart\Util\Contracts\Clearable
 {
-
-    /**
-     * Clear this component, e.g. collection, list, set...etc.
-     *
-     * Method removes all internal values, which this component
-     * holds.
-     *
-     * @return void
-     */
-    public function clear();
 
 }
