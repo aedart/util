@@ -12,7 +12,6 @@ use Exception;
  */
 trait PopulateHelperTrait
 {
-
     /**
      * Assert that the given data array contains all of the required
      * keys
@@ -23,7 +22,7 @@ trait PopulateHelperTrait
      * @throws Exception If there are too few properties provided or if the required properties are not present
      *                  in the given data array
      */
-    public function assertPopulateData(array $data, array $required)
+    public function assertPopulateData(array $data, array $required) : void
     {
         // Check if the provided data has less entries, than the
         // required
@@ -33,7 +32,7 @@ trait PopulateHelperTrait
 
         // Check that all of the required are present
         foreach ($required as $requiredKey) {
-            if (!array_key_exists($requiredKey, $data)) {
+            if( ! isset($data[$requiredKey])){
                 throw new Exception(sprintf('Cannot populate %s, missing %s', get_class($this), $requiredKey));
             }
         }
