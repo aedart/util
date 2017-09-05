@@ -39,10 +39,10 @@ In this example, we create a concrete collection which can only contain integer 
 
 ```php
 <?php
-use Aedart\Util\Interfaces\Collections\IPartialCollection;
+use \Aedart\Util\Contracts\Collections\PartialCollection;
 use Aedart\Util\Traits\Collections\PartialCollectionTrait;
 
-class MyCollection implements IPartialCollection
+class MyCollection implements PartialCollection
 {
     use PartialCollectionTrait;
 
@@ -55,7 +55,7 @@ class MyCollection implements IPartialCollection
         $this->getInternalCollection()->put($key, $value);
     }
     
-    public function populate(array $data = [])
+    public function populate(array $data = []) : void
     {
         // ... Implementation not shown here ...
     }
@@ -84,7 +84,7 @@ class MyCollection implements IPartialCollection
 
 ### Behind the scenes
 
-The `PartialCollectionTrait` uses a [`Illuminate\Support\Collection`](https://laravel.com/docs/5.4/collections) and provides internal access to it via the `getInternalCollection()` and
+The `PartialCollectionTrait` uses a [`Illuminate\Support\Collection`](https://laravel.com/docs/5.5/collections) and provides internal access to it via the `getInternalCollection()` and
 `setInternalCollection()` methods.
 
 In other words, you can choose to form your concrete collections as you see fit, and expose only those methods that you wish.
