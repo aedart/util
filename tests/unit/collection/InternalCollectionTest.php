@@ -6,7 +6,8 @@ use Illuminate\Support\Collection;
 /**
  * Class InternalCollectionTest
  *
- * @coversDefaultClass Aedart\Util\Traits\Collections\InternalCollectionTrait
+ * @group collections
+ * @group collections-internal
  *
  * @author Alin Eugen Deac <aedart@gmail.com>
  */
@@ -21,7 +22,8 @@ class InternalCollectionTest extends CollectionTestCase
      *
      * @return DummyInternalCollection
      */
-    protected function getDummyInternalCollection(){
+    protected function getDummyInternalCollection() : DummyInternalCollection
+    {
         return new DummyInternalCollection();
     }
 
@@ -31,11 +33,9 @@ class InternalCollectionTest extends CollectionTestCase
 
     /**
      * @test
-     * @covers ::setInternalCollection
-     * @covers ::getInternalCollection
-     * @covers ::getDefaultInternalCollection
      */
-    public function getDefaultInternalCollection(){
+    public function getDefaultInternalCollection()
+    {
         $collection = $this->getDummyInternalCollection()->getInternalCollection();
         $this->assertNotNull($collection, 'Expected a collection - something is off!');
         $this->assertInstanceOf('Illuminate\Support\Collection', $collection);
@@ -49,23 +49,26 @@ class InternalCollectionTest extends CollectionTestCase
  *
  * @author Alin Eugen Deac <aedart@gmail.com>
  */
-class DummyInternalCollection {
-
+class DummyInternalCollection
+{
     use InternalCollectionTrait {
         setInternalCollection as setInternalCollectionTrait;
         getInternalCollection as getInternalCollectionTrait;
         getDefaultInternalCollection as getDefaultInternalCollectionTrait;
     }
 
-    public function setInternalCollection(Collection $internalCollection) {
+    public function setInternalCollection(?Collection $internalCollection)
+    {
         $this->setInternalCollectionTrait($internalCollection);
     }
 
-    public function getInternalCollection() {
+    public function getInternalCollection() : ?Collection
+    {
         return $this->getInternalCollectionTrait();
     }
 
-    public function getDefaultInternalCollection() {
+    public function getDefaultInternalCollection() : ?Collection
+    {
         return $this->getDefaultInternalCollectionTrait();
     }
 

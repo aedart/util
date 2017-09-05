@@ -5,11 +5,13 @@ use Aedart\Util\Traits\populate\PopulateHelperTrait;
 /**
  * Class PopulateHelperTraitTest
  *
- * @coversDefaultClass Aedart\Util\Traits\populate\PopulateHelperTrait
+ * @group populate
+ * @group populate-helper
  *
  * @author Alin Eugen Deac <aedart@gmail.com>
  */
-class PopulateHelperTraitTest extends UnitTestCase {
+class PopulateHelperTraitTest extends UnitTestCase
+{
 
     /*********************************************************************************
      * Helpers
@@ -20,8 +22,9 @@ class PopulateHelperTraitTest extends UnitTestCase {
      *
      * @return PHPUnit_Framework_MockObject_MockObject|Aedart\Util\Traits\populate\PopulateHelperTrait
      */
-    protected function getTraitMock(){
-        return $this->getMockForTrait('Aedart\Util\Traits\populate\PopulateHelperTrait');
+    protected function getTraitMock()
+    {
+        return $this->getMockForTrait(PopulateHelperTrait::class);
     }
 
     /*********************************************************************************
@@ -30,12 +33,10 @@ class PopulateHelperTraitTest extends UnitTestCase {
 
     /**
      * @test
-     *
-     * @covers ::assertPopulateData
-     *
      * @expectedException Exception
      */
-    public function failWhenTooFewPropertiesAreProvided(){
+    public function failWhenTooFewPropertiesAreProvided()
+    {
         $trait = $this->getTraitMock();
 
         $required = ['a', 'b', 'c'];
@@ -49,12 +50,10 @@ class PopulateHelperTraitTest extends UnitTestCase {
 
     /**
      * @test
-     *
-     * @covers ::assertPopulateData
-     *
      * @expectedException Exception
      */
-    public function failWhenIncorrectPropertiesAreProvided(){
+    public function failWhenIncorrectPropertiesAreProvided()
+    {
         $trait = $this->getTraitMock();
 
         $required = ['a', 'b', 'c'];
@@ -69,10 +68,9 @@ class PopulateHelperTraitTest extends UnitTestCase {
 
     /**
      * @test
-     *
-     * @covers ::assertPopulateData
      */
-    public function doNothingIfAllRequiredAreProvided(){
+    public function doNothingIfAllRequiredAreProvided()
+    {
         $trait = $this->getTraitMock();
 
         $required = ['a', 'b', 'c'];

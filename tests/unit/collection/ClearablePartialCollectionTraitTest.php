@@ -5,11 +5,13 @@ use Aedart\Util\Traits\Collections\ClearablePartialCollectionTrait;
 /**
  * Class Clearable-Partial-Collection Trait Test
  *
- * @coversDefaultClass Aedart\Util\Traits\Collections\ClearablePartialCollectionTrait
+ * @group collections
+ * @group collections-clearable
  *
  * @author Alin Eugen Deac <aedart@gmail.com>
  */
-class ClearablePartialCollectionTraitTest extends CollectionTestCase{
+class ClearablePartialCollectionTraitTest extends CollectionTestCase
+{
 
     /*********************************************************************************
      * Helpers
@@ -20,7 +22,8 @@ class ClearablePartialCollectionTraitTest extends CollectionTestCase{
      *
      * @return DummyClearablePartialCollection
      */
-    protected function getDummyCollection(){
+    protected function getDummyCollection() : DummyClearablePartialCollection
+    {
         return new DummyClearablePartialCollection();
     }
 
@@ -30,9 +33,9 @@ class ClearablePartialCollectionTraitTest extends CollectionTestCase{
 
     /**
      * @test
-     * @covers ::clear
      */
-    public function clearTheCollection(){
+    public function clearTheCollection()
+    {
         $collection = $this->getDummyCollection();
 
         $collection->addFrom($this->getListOfKeyValuePairs());
@@ -44,11 +47,12 @@ class ClearablePartialCollectionTraitTest extends CollectionTestCase{
 
 }
 
-class DummyClearablePartialCollection {
-
+class DummyClearablePartialCollection
+{
     use ClearablePartialCollectionTrait;
 
-    public function addFrom(array $list){
+    public function addFrom(array $list) : void
+    {
         $this->setInternalCollection($this->getInternalCollection()->merge($list));
     }
 
