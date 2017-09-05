@@ -1,12 +1,13 @@
 <?php namespace Aedart\Util\Traits\Collections;
 
-use Aedart\Util\Traits\Collections\PartialCollectionTrait;
+use Aedart\Util\Contracts\Clearable;
+use Aedart\Util\Contracts\Collections\PartialCollection;
 
 /**
  * Trait Clearable Partial Collection
  *
- * @see \Aedart\Util\Interfaces\Collections\IPartialCollection
- * @see \Aedart\Util\Interfaces\Clearable
+ * @see PartialCollection
+ * @see Clearable
  * @see \Illuminate\Support\Collection
  *
  * @author Alin Eugen Deac <aedart@gmail.com>
@@ -14,7 +15,6 @@ use Aedart\Util\Traits\Collections\PartialCollectionTrait;
  */
 trait ClearablePartialCollectionTrait
 {
-
     use PartialCollectionTrait;
 
     /**
@@ -25,9 +25,8 @@ trait ClearablePartialCollectionTrait
      *
      * @return void
      */
-    public function clear()
+    public function clear() : void
     {
         $this->setInternalCollection($this->getDefaultInternalCollection());
     }
-
 }

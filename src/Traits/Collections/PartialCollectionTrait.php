@@ -1,6 +1,5 @@
 <?php namespace Aedart\Util\Traits\Collections;
 
-use Aedart\Util\Traits\Collections\InternalCollectionTrait;
 use Traversable;
 
 /**
@@ -13,7 +12,7 @@ use Traversable;
  * However, not all methods are offered by this trait. The reason for this is to
  * allow you to decide how your concrete collection should behave.
  *
- * @see \Aedart\Util\Interfaces\Collections\IPartialCollection
+ * @see \Aedart\Util\Contracts\Collections\PartialCollection
  * @see \Illuminate\Support\Collection
  *
  * @author Alin Eugen Deac <aedart@gmail.com>
@@ -21,7 +20,6 @@ use Traversable;
  */
 trait PartialCollectionTrait
 {
-
     use InternalCollectionTrait;
 
     /**
@@ -33,7 +31,7 @@ trait PartialCollectionTrait
      * <p>
      * The return value is cast to an integer.
      */
-    public function count()
+    public function count() : int
     {
         return $this->getInternalCollection()->count();
     }
@@ -43,7 +41,7 @@ trait PartialCollectionTrait
      *
      * @return bool True if empty, false if not
      */
-    public function isEmpty()
+    public function isEmpty() : bool
     {
         return $this->getInternalCollection()->isEmpty();
     }
@@ -55,7 +53,7 @@ trait PartialCollectionTrait
      * @return Traversable An instance of an object implementing <b>Iterator</b> or
      * <b>Traversable</b>
      */
-    public function getIterator()
+    public function getIterator() : Traversable
     {
         return $this->getInternalCollection()->getIterator();
     }
@@ -99,7 +97,7 @@ trait PartialCollectionTrait
      *
      * @return string Representation of this collection
      */
-    public function __toString()
+    public function __toString() : string
     {
         return $this->toJson();
     }
