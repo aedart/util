@@ -11,6 +11,8 @@ use IteratorAggregate;
 use JsonSerializable;
 
 /**
+ * @deprecated Use \Illuminate\Support\Collection instead
+ *
  * Partial Collection
  *
  * <br />

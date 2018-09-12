@@ -3,6 +3,8 @@
 use Illuminate\Support\Collection;
 
 /**
+ * @deprecated Use \Illuminate\Support\Collection instead
+ *
  * Trait Internal Collection
  *
  * Offers components a getter and setter for an internal / protected

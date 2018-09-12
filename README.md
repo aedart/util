@@ -4,7 +4,9 @@
 [![Latest Unstable Version](https://poser.pugx.org/aedart/util/v/unstable)](https://packagist.org/packages/aedart/util)
 [![License](https://poser.pugx.org/aedart/util/license)](https://packagist.org/packages/aedart/util)
 
-# Util
+# Deprecated - Util
+
+Package has been replaced by [aedart/athenaeum](https://github.com/aedart/athenaeum)
 
 This package contains a set of various utility resources, which can be used independently. 
 

@@ -3,6 +3,8 @@
 namespace Aedart\Util\Contracts;
 
 /**
+ * @deprecated Use \Aedart\Contracts\Utils\Clearable instead, in aedart/athenaeum package
+ *
  * Clearable
  *
  * <br />

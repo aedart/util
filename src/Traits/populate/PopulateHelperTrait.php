@@ -3,6 +3,8 @@
 use Exception;
 
 /**
+ * @deprecated Use \Aedart\Utils\Helpers\PopulateHelper instead, in aedart/athenaeum package
+ *
  * Trait Populate Helper
  *
  * Contains a few utilities for assisting to populate a component

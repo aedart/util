@@ -4,6 +4,8 @@ use Aedart\Util\Contracts\Clearable;
 use Aedart\Util\Contracts\Collections\PartialCollection;
 
 /**
+ * @deprecated Use \Illuminate\Support\Collection instead
+ *
  * Trait Clearable Partial Collection
  *
  * @see PartialCollection

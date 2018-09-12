@@ -3,6 +3,9 @@
 use Traversable;
 
 /**
+ *
+ * @deprecated Use \Illuminate\Support\Collection instead
+ *
  * Trait Partial Collection
  *
  * This trait offers some predefined implementation of a "partial" collection, by

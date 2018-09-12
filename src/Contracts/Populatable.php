@@ -5,6 +5,8 @@ namespace Aedart\Util\Contracts;
 use Exception;
 
 /**
+ * @deprecated Use \Aedart\Contracts\Utils\Populatable instead, in aedart/athenaeum package
+ *
  * Populatable
  *
  * <br />
